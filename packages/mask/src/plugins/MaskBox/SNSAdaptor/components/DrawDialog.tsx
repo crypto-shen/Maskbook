@@ -131,6 +131,7 @@ export function DrawDialog(props: DrawDialogProps) {
                                     value={new BigNumber(paymentTokenPrice).multipliedBy(paymentCount)}
                                     decimals={paymentTokenDetailed?.decimals ?? 0}
                                     symbol={paymentTokenDetailed?.symbol}
+                                    formatter={formatBalance}
                                     significant={6}
                                 />
                             </span>
